@@ -1,3 +1,11 @@
+<script lang="ts">
+    import Link from '$lib/components/Link.svelte'
+</script>
+
+<svelte:head>
+    <title>Sandour - contact</title>
+</svelte:head>
+
 <div class="h-screen flex flex-col justify-center items-center relative">
-    <p><a href="mailto:contact@sandour.xyz">contact@sandour.xyz</a></p>
+    <p><Link url="mailto:contact@sandour.xyz" text={"contact@sandour.xyz"}/></p>
 </div>

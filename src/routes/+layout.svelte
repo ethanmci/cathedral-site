@@ -1,11 +1,13 @@
 <script>
 	import '../app.css';
 	import '../fonts.css';
+	import Link from '$lib/components/Link.svelte'
 </script>
 
 <nav class="text-gray-50 underline-offset-4 w-full lowercase bold p-5 absolute z-10">
-    <a class="underline mx-4 hover:text-green-400" href="/">Home</a>
-	<a class="underline mx-4 hover:text-" href="/contact">Contact</a>
+	<!-- TODO: fix tabindex for nav -->
+	<span class="mx-5"><Link text={"home"} url={'/'}/></span>
+	<span class="mx-5"><Link text={"contact"} url={'/contact'}/></span>
 </nav>
 <slot />
 
