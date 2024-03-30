@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-    <title>Sandour - contact</title>
+    <title>Sandour - Contact</title>
 </svelte:head>
 
 <div class="h-screen flex flex-col justify-center items-center relative">
