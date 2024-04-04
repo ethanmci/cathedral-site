@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
-	import Link from '$lib/components/Link.svelte';
 	export let form;
 	let name: string = '';
 	let email: string = '';
