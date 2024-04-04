@@ -1,4 +1,5 @@
 <script lang="ts">
+	import contact from '$lib/assets/contact.png' 
 	import { enhance } from '$app/forms';
 	export let form;
 	let name: string = '';
@@ -12,7 +13,7 @@
 </svelte:head>
 
 <div class="h-screen flex flex-col justify-center items-center relative text-gray-50">
-	<h1 class="text-3xl font-bold underline underline-offset-4 mb-8">Contact</h1>
+	<h1 class="mb-16"><img src={contact} style="width: 18em;" alt="Contact"></h1>
 	{#if !form?.success}
 		{#if form?.errors}
 		<div class="md:w-1/3 w-11/12 mb-4 bg-red-900 p-4 text-white font-bold">
