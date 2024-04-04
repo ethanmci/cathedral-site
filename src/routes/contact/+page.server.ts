@@ -1,6 +1,6 @@
 import { fail } from '@sveltejs/kit';
 import type { Actions } from './$types';
-import { PUBLIC_API_KEY } from '$env/static/public';
+import { SECRET_API_KEY } from '$env/static/private';
 
 export interface Fields {
 	name?: string,
@@ -33,7 +33,7 @@ export const actions = {
 
 		if(Object.keys(errors).length > 0) return fail(400, { errors: errors });
 
-		formData.append('access_key', PUBLIC_API_KEY);
+		formData.append('access_key', SECRET_API_KEY);
 		const object = Object.fromEntries(formData);
   		const json = JSON.stringify(object);
 
