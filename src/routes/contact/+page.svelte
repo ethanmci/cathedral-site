@@ -22,7 +22,7 @@
 	<form method="POST" class="flex flex-col items-center md:w-1/3 w-11/12" action="?/submit" use:enhance>
 		<div class="grid grid-cols-2 w-full gap-4 mb-8">
 			<div class="flex flex-col md:col-span-1 col-span-2">
-				<label for="name" placeholder="Your Name">Name:</label>
+				<label for="name" placeholder="Your Name" class="font-bold">Name:</label>
 				<input
 					name="name"
 					id="name"
@@ -32,7 +32,7 @@
 				/>
 			</div>
 			<div class="flex flex-col md:col-span-1 col-span-2">
-				<label for="email" placeholder="your.email@here.com">Email:</label>
+				<label for="email" placeholder="your.email@here.com" class="font-bold">Email:</label>
 				<input
 					name="email"
 					id="email"
@@ -43,8 +43,8 @@
 			</div>
 		</div>
 		<div class="flex flex-col w-full mb-8">
-			<label for="title" placeholder="Your Name"
-				>Title: <span class="text-xs text-gray-400">(optional)</span></label
+			<label for="title" placeholder="Your Name" class="font-bold"
+				>Title: <span class="text-xs font-normal text-gray-400">(optional)</span></label
 			>
 			<input
 				name="title"
@@ -55,7 +55,7 @@
 			/>
 		</div>
 		<div class="flex flex-col w-full mb-8">
-			<label for="message" placeholder="Your Name">Message</label>
+			<label for="message" placeholder="Your Name" class="font-bold">Message:</label>
 			<textarea
 				name="message"
 				id="message"
