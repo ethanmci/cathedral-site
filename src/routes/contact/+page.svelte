@@ -15,13 +15,13 @@
 	<h1 class="text-3xl font-bold underline underline-offset-4 mb-8">Contact</h1>
 	{#if !form?.success}
 		{#if form?.errors}
-		<div class="mb-4 bg-red-900 w-1/3 p-4 text-white font-bold">
+		<div class="md:w-1/3 w-11/12 mb-4 bg-red-900 p-4 text-white font-bold">
 			<p>Empty or invalid fields: {[...Object.keys(form?.errors)].join(', ')}</p>
 		</div>
 		{/if}
-	<form method="POST" class="flex flex-col items-center w-1/3" action="?/submit" use:enhance>
+	<form method="POST" class="flex flex-col items-center md:w-1/3 w-11/12" action="?/submit" use:enhance>
 		<div class="grid grid-cols-2 w-full gap-4 mb-8">
-			<div class="flex flex-col">
+			<div class="flex flex-col md:col-span-1 col-span-2">
 				<label for="name" placeholder="Your Name">Name:</label>
 				<input
 					name="name"
@@ -31,7 +31,7 @@
 					bind:value={name}
 				/>
 			</div>
-			<div class="flex flex-col">
+			<div class="flex flex-col md:col-span-1 col-span-2">
 				<label for="email" placeholder="your.email@here.com">Email:</label>
 				<input
 					name="email"
