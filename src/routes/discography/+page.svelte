@@ -31,9 +31,9 @@
 <div class="h-screen flex flex-col relative pt-24 p-10 text-gray-50">
 	<h1 class="mb-10 text-2xl">Discography</h1>
 	<h2 class="mb-4 text-xl">Singles</h2>
-	{#if data.song && data.song.length}
+	{#if data.songs && data.songs.length}
 		<div class="grid md:grid-cols-5 gap-4">
-			{#each data.song.sort(orderReleases) as single}
+			{#each data.songs.sort(orderReleases) as single}
 				<div class="min-w-28 mb-4">
 					<img
 						src={urlFor(single.cover).width(600).toString()}
