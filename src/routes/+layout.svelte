@@ -8,6 +8,7 @@
 	<!-- TODO: fix tabindex for nav -->
 	<span class="mx-5"><Link text={"home"} url={'/'}/></span>
 	<span class="mx-5"><Link text={"discography"} url={'/discography'}/></span>
+	<span class="mx-5"><Link text={"events"} url={'/events'}/></span>
 	<span class="mx-5"><Link text={"contact"} url={'/contact'}/></span>
 </nav>
 <slot />
